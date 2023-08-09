@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="shortcut icon" href="isi/gambar/logo1.png">
+    <title>Kontak Pembuat</title>
+    <script type='text/javascript' src='https://cdn.prinsh.com/NathanPrinsley-effect/efek-salju.js'></script>
+</head>
+<style>
+        body {
+      background-color: rgb(138, 199, 217);
+    }
+    .contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    }
+    
+    .contact {
+        flex: 1;
+        margin-right: 0px; /* Atur jarak antara "contact" dan "contact-content" */
+    }
+    
+    .contact h2{
+        margin-left: 520px;
+    }
+    
+    .contact-content h3 {
+        text-align: left;
+        margin-left: 20px;
+    }
+    .contact-content {
+        flex: 1;
+        margin-left: opx; /* Atur jarak antara "contact" dan "contact-content" */
+        background-color: rgb(102, 214, 248);
+        min-height: 75vh;
+        margin-top: 65px;
+    }
+    
+    .contact-content ul {
+        list-style-type: none;
+        padding: 0;
+        text-align: left;
+        margin-left: 40px;
+    }
+        #map {
+        height: 400px;
+        margin-bottom: 20px;
+    }
+    @media (max-width: 600px) {
+        #map {
+        height: 300px;
+        }
+    }
+    #weather-info {
+        font-family: Arial, sans-serif;
+        justify-content: left;
+    }
+    nav {
+        background-color: #47474738;
+        padding: 10px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+</style>
+<body>
+    <div id="background"></div>
+    <nav>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="about.html">Hadiah</a></li>
+          <li><a href="galery.html">Galery</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </nav>
+    <main>
+        <h1>Biodata</h1>
+        <p>Nama: Farid Ghozali</p>
+        <p>Tanggal Lahir: 10 juli 2003</p>
+        <p>Pendidikan: Sarjana Teknik Informatika, Universitas Trunojoyo Madura</p>
+        <p>Pengalaman Kerja:</p>
+        <li>Analis Sistem, PT ABC, 2015-2017</li>
+        <li>Developer Web, PT XYZ, 2017-2020</li>
+        <li>Manajer Proyek, PT KLM, 2020-sekarang</li>
+        Keahlian:
+        <li>Pengembangan Web (HTML, CSS, JavaScript)</li>
+        <li>Bahasa Pemrograman (Python, Java, PHP)</li>
+        <li>Manajemen Proyek</li>
+        <li>Analisis Sistem</li>
+        <p>Tujuan Karir: </p>
+        <p>Menjadi seorang profesional yang sukses dan berkontribusi dalam industri teknologi dengan mengembangkan solusi inovatif dan memberikan dampak positif pada perusahaan.</p>
+        <div class="contact-container">
+            <div id="contact" class="contact">
+                 <h2>Maps</h2>
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3956.1337737857725!2d112.50903707385541!3d-7.450448992560724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwMjcnMDEuNiJTIDExMsKwMzAnNDEuOCJF!5e0!3m2!1sid!2sid!4v1688619724476!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
+            </div> 
+            <div class="contact-content">
+                <h3>Lokasi Rumah</h3>
+                <ul>
+                     <li id="cuaca">Cuaca :</li>
+                     <li id="suhu">Suhu :</li>
+                     <li id="wind-speed">Kecepatan Angin :</li>
+                     <li><img id="weather-icon" src="" alt=""></li>
+                </ul>
+                 <h3>Phone :</h3>
+                 <ul>
+                      <li id="nomor">0877-5812-5032</li>
+                 </ul>
+                 <h3>Alamat :</h3>
+                 <ul>
+                      <li id="alamat">Jl. Balongkangkung, Balongkangkung, Balongmacekan, Kec. Tarik, Kabupaten Sidoarjo, Jawa Timur 61265</li>
+                 </ul>
+            </div>
+       </div>          
+  </div>
+        <H2>Form Pesan</H2>
+        <table border="0">
+            <tr>
+                <td>Nama</td>
+                <td>:<input type="text" name="Nama" ><br></td>
+            </tr>
+            <tr>
+                <td><br>Email</td>
+                <td><br>:<input type="text" name="email"></td>
+            </tr>
+            <tr>
+                <td>Tanggal</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>Pesan</td>
+                <td><textarea></textarea></td>
+            </tr>
+            <tr>
+                <td align="center"><input type="submit" name=simpan value="kirim">
+                <td align="center"><input type="reset" name="Batal" value="batal"></td>
+        
+        </table>
+        </form>
+       </main>
+    <script>
+        fetch("https://api.openweathermap.org/data/2.5/weather?q=sidoarjo&appid=6bc31070e25fa23d5700e9b775a0bdd5&units=metric")
+        .then((res) => res.json())
+        .then((data) => {
+        console.log(data);
+
+        let cuaca = document.querySelector("#cuaca");
+        cuaca.innerHTML = "Cuaca : " + data.weather[0].description;
+
+        let suhu = document.querySelector("#suhu");
+        suhu.innerHTML = "Suhu : " + data.main.temp + " C";
+
+        let windSpeed = document.querySelector("#wind-speed");
+        windSpeed.innerHTML = "Kecepatan Angin : " + data.wind.speed + " km/h";
+            
+
+        let weatherIcon = document.querySelector("#weather-icon");
+        let iconCode = data.weather[0].icon;
+        let iconUrl = `https://openweathermap.org/img/wn/${iconCode}.png`;
+        weatherIcon.setAttribute("src", iconUrl);
+        weatherIcon.setAttribute("alt", data.weather[0].description);
+        });
+        const images = document.querySelectorAll('.image-container img');
+        const popupContainer = document.querySelector('.popup-container');
+        const popupImage = document.querySelector('.popup-image');
+        const prevButton = document.querySelector('.prev');
+        const nextButton = document.querySelector('.next');
+
+        let currentImageIndex = 0;
+
+        function showPopup(imageIndex) {
+            const imageUrl = images[imageIndex].src;
+            popupImage.src = imageUrl;
+            popupContainer.classList.add('active');
+        }
+
+        function hidePopup() {
+            popupContainer.classList.remove('active');
+        }
+
+        function showPreviousImage() {
+            currentImageIndex = (currentImageIndex - 2 + images.length) % images.length;
+            showPopup(currentImageIndex);
+        }
+
+        function showNextImage() {
+            currentImageIndex = (currentImageIndex + 2) % images.length;
+            showPopup(currentImageIndex);
+        }
+
+        images.forEach((image, index) => {
+            image.addEventListener('click', () => {
+                currentImageIndex = index;
+                showPopup(currentImageIndex);
+            });
+        });
+
+        popupContainer.addEventListener('click', (event) => {
+            if (event.target === popupContainer) {
+                hidePopup();
+            }
+        });
+
+        prevButton.addEventListener('click', showPreviousImage);
+        nextButton.addEventListener('click', showNextImage);
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'ArrowLeft') {
+                showPreviousImage();
+            } else if (event.key === 'ArrowRight') {
+                showNextImage();
+            } else if (event.key === 'Escape') {
+                hidePopup();
+            }
+        });
+
+        //background
+    </script>
+</body>
+</html>
